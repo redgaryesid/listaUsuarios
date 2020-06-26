@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Usuarios App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    html, body{
+      height:100%;
+      margin:0;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body background="../image/fondo.jpg">
+  <div class="panel panel-default align-self-center text-center" id="login" style="background: #ffffffa3;">
+    <div class="panel-header">
+        <h1>Inicio de Sesión</h1>
+    </div>
+    <div class="panel-body">
+        <form class="form-horizontal" >
+            <div class="form-group">
+                <div class="col-xs-12">
+                    <img src="../image/descarga.jpg">
+                </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="Usuario" placeholder="Usuario">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="Password" placeholder="Contraseña">
+              </div>
+            </div>
+            <div id="mensaje"></div>
+            <div class="form-group">
+              <div class=" col-sm-12">
+                <button type="button" class="btn btn-default" id="login_form">Ingresar</button>
+              </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                  <button type="button" id="register" class="btn btn-default">Registro</button>
+                </div>
+              </div>
+          </form>
+    </div>
+  </div>      
+      <script src="../controlers/Loggin.js"></script>
+</body>
+</html>
